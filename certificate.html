@@ -6,6 +6,10 @@
     <title>Certificates</title>
     <link rel="icon" href="images/certi.webp"/>
     <style>
+        body{
+            background-image: linear-gradient(to left, thistle,deepskyblue,lavender);
+            height: 100%;
+        }
         .div{
             font-size: larger;
             font-weight: bold;
@@ -15,9 +19,68 @@
             background-image:radial-gradient( aqua,orchid);
        
         }
+    
+    table,td,th{
+      border: 2px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      padding: 40px;
+      margin-left: 23%;
+     
+      
+    }
+    table{
+      display: none;
+    }
+    .h6{
+            margin-top: 13%;
+            
+        }
     </style>
 </head>
 <body>
     <div class="div"> Some Courses Certificates.....</div>
+    <h2>
+        Certificate details:
+    </h2>
+    <button onclick="List('xyz')">Certificates</button>
+    <table width="600" id="tb">
+        <tr>
+            <td>Serial No.</td>
+            <td>Subject Name</td>
+            <td>Certificate Image</td>
+        </tr>
+        <tbody id="Certi"></tbody>
+    </table>
+
+    <script>
+        abc = ""
+        function List(type){
+            data = [[1,'Structured Query Language', 'images/Sql certi.jpg']]
+            if(type=='xyz'){
+         
+         for(i=0;i<data.length;i++){
+           abc += "<tr>"
+           for(j=0;j<data[i].length;j++){
+            
+             if (j==2){
+               abc+=`<td><img src='${data[i][j]}' width='100px' height='100px'/></td> `
+             }
+             else{
+               abc+=`<td>${data[i][j]}</td>`
+             }
+           }
+           abc += "</tr>"
+           console.log(abc)
+         }
+ 
+         document.getElementById('Certi').innerHTML = abc
+         document.getElementById('tb').style.display = 'block';
+    
+        }
+    }
+        
+    </script>
+    <h5 class="h6"><a href="Index.html">Back to the Home Page</a></h5>
 </body>
 </html>
