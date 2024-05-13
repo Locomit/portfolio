@@ -15,36 +15,49 @@
             background-color: blueviolet;
             text-align: center;
             height: 50px;
-            padding-top: 17px;
+            padding-top: 15px;
         }
         .div1{
             text-align: left;
-            margin-top: 40vb;
+            margin-top: 23vb;
             border: 2px solid black;
             background-color: aquamarine;
             
         }
         form{
             border: 2px solid black;
-            width: 40vw;
+            width: 50vw;
             text-align: justify;
-            margin-top: 10vb;
-            margin-left: 15vb;
+            margin-top: 15vb;
+            margin-left: 50vb;
+            padding-left: 7px;
 
         }
+        
     </style>
 </head>
 <body>
-    <div class="div">Contact Us......</div>
+    <h1 class="div">Contact Us......</h1>
+    <script>
+        function Submit(){
+            event.preventDefault();
+            name = document.getElementById("Fn1").value;
+            email = document.getElementById("Email1").value;
+
+        var messageDiv = document.getElementById("message");
+        messageDiv = alert("your information is saved successfully....")
+        }
+    </script>
     <form action="" method="get" enctype="">
         <br>
-        
-        Full Name: <input type="text" name="" placeholder="Enter your Full Name" required/><br><br>
-        Email: <input type="email" placeholder="Enter your Email ID..." required/><br><br>
+        <h4 style="text-align: center;"><u><b>..Contact me..</b></u></h4>  
+        Full Name: <input type="text" name="" id="Fn1" placeholder="Enter your Full Name" required/><br><br>
+        Email: <input type="email" id="Email1" placeholder="Enter your Email ID..." required/><br><br>
         Any suggestions: <textarea maxlength="500" rows="3" cols="50"></textarea><br><br>
-        <center><button type="submit">Submit</button></center><br>
+        <center><button type="submit" onclick="Submit()">Submit</button></center><br>
 
     </form>
+  
     <div class="div1">
         <a href="https://github.com/Locomit/portfolio"><img src="images/github.png" width="30px"></a>
         <a href="https://www.facebook.com/"><img src="images/fbb.jpg" width="30px"></a>

@@ -7,7 +7,7 @@
     <link rel="icon" href="images/porty.png"/>
     <style>
         body{
-            background-color:lavenderblush
+            background-color:aqua
         }
         ul{
             list-style-type:none;
@@ -24,6 +24,32 @@
             background-color:lightcoral;
             height: 50px;
         }
+        .circular-image {
+        width: 340px;
+        height: 340px;
+        border-radius: 50%; 
+        overflow:hidden; 
+        border: 5px solid #555;
+        display: block;
+        margin-top: 2%;
+        margin-left: 38%;
+    }
+    .circular-image img {
+        width: 100%; 
+        height: auto;
+    }
+    .h2{
+        margin-left: 82vb;
+        font-weight: bold;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 5px 10px 5px gray;
+    }
+    .h3{
+        margin-left: 84vb;
+        font-weight: bold;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 5px 10px 5px gray;
+    }
     </style>
 </head>
 <body >
@@ -31,11 +57,18 @@
     <nav>
         <ul>
             <li><a href ='home.html'>Home</a></li>
-            <li><a href='skills.html'>Skills</a></li>
-            <li><a href='certificate.html'>Certificats</a></li>
             <li><a href='project.html'>Project</a></li>
+            <li><a href='certificate.html'>Certificats</a></li>
             <li><a href='contact us.html'>Contact Us</a></li>
         </ul>
     </nav>
+    <marquee direction="right">
+        <h2> <u><i>Namita's portfolio here...</i></u></h2>
+        </marquee>
+    <div class="circular-image">
+        <img src="images/n7.jpg" alt="img1"/>
+    </div>
+    <h1 class="h2"><a href ='home.html'> Namita Vinay Bhoir</a></h1>
+    <h2 class="h3">I'm Full Stack Developer</h2>
 </body>
 </html>
